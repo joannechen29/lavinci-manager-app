@@ -15,6 +15,11 @@ var app = new Framework7({
     },
 
     // components
+    {
+      path:"/link1/", 
+      url: "./pages/link1.html", 
+      name: "link1"
+    },
 
     {
       path: "/daily_summary/",
