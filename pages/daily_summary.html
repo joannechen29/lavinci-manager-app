@@ -1,0 +1,214 @@
+<div class="page" data-name="daily_summary">
+
+    <div class="panel panel-left panel-cover">
+        <p>Hello User!</p>
+        <div class="list links-list no-hairlines">
+            <ul>
+                <li>
+                    <a href="/daily_summary/">Daily Summary</a>
+                </li>
+                <li>
+                    <a href="/booking_source/">Booking Source</a>
+                </li>
+                <li>
+                    <a href="/current_operations/">Current Operations</a>
+                </li>
+                <li>
+                    <a href="/available_tables/">Available Tables</a>
+                </li>
+                <li>
+                    <a href="/top_nationalities/">Top Nationalities</a>
+                </li>
+                <li>
+                    <a href="/messages/">Messages</a>
+                </li>
+                <li>
+                    <a href="/logout/">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="statusbar"></div>
+
+
+    <!-- Top Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link icon-only panel-open">
+                    <i class="f7-icons">bars</i>
+                </a>
+            </div>
+            <div class="title">Daily Summary</div>
+            <!-- <div class="right">
+                        <a href="#" class="link icon-only panel-open">
+                            <i class="f7-icons">filter_full</i>
+                        </a>
+                    </div> -->
+            <div class="right">
+
+                <a href="" onclick="jQuery('.filter-area').toggle();">
+                    <!-- Filter -->
+                    <i class="f7-icons">filter_full</i>
+                </a>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="page-content">
+
+        <!-- <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Some text in the Modal..</p>
+                            </div> -->
+
+        <div class="filter-area" style="display:none;">
+            <table>
+                <!-- Restaurant options -->
+                <tr>
+                    <th class="table-head-label text-align-left ">
+                        Restaurant
+                    </th>
+
+                    <th class=" ">
+                        <div class="input input-dropdown  ">
+
+                            <select id="filterRestaurant">
+                                <option id="all" value="All">All</option>
+                                <option id="restA" value="Restaurant A">Restaurant A</option>
+                                <option id="restB" value="Restaurant B">Restaurant B</option>
+                                <option id="restC" value="Restaurant C">Restaurant C</option>
+
+                            </select>
+
+                        </div>
+                    </th>
+
+                </tr>
+                <!-- calender date -->
+                <tr>
+                    <th class="text-align-left"> Date</th>
+
+                    <th class="">
+
+                        <div class="list no-hairlines-md">
+                            <ul>
+                                <li>
+                                    <div class="item-content item-input">
+                                        <div class="item-inner">
+                                            <div class="item-input-wrap">
+                                                <input type="text" placeholder="Select date" readonly="readonly" id="demo-calendar-modal" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <a href="">
+
+                            <div class="f7-icons" id="demo-calendar-modal">calendar </div>
+
+
+                        </a> -->
+                    </th>
+                </tr>
+
+
+
+                <tr>
+                    <th>
+                        <button type="button" class="col button button-big button-fill" onclick="getDailySummary()">Apply</button>
+                    </th>
+                </tr>
+
+            </table>
+        </div>
+        <div class="top_progress_bar">
+            <div class="occupancy_percentage">80%</div>
+
+            <p>
+                <span data-progress="80" class="progressbar" id="demo-inline-progressbar">
+                    Occupancy Rate
+                </span>
+            </p>
+            Occupancy Rate
+
+        </div>
+        <div class="daily-summary-info">
+
+            <div class="list">
+                <ul>
+                    <!-- bookings -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="f7-icons">book</i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Bookings</div>
+                                <div class="item-bookings">30</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- people -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="f7-icons">person_fill</i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">People</div>
+                                <div class="item-people"> 60
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- cancelled -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="f7-icons">close</i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Cancelled</div>
+                                <div class="item-cancelled">10</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- walk-ins -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="f7-icons">paper_plane_full</i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Walk-Ins</div>
+                                <div class="item-walkins"> 10
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- waitlist -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="f7-icons">alarm_fill</i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Waitlist</div>
+                                <div class="item-waitlist"> 5
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>

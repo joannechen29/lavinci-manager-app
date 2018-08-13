@@ -15,6 +15,11 @@ var app = new Framework7({
     },
 
     // components
+    {
+      path:"/link1/", 
+      url: "./pages/link1.html", 
+      name: "link1"
+    },
 
     {
       path: "/daily_summary/",
@@ -33,7 +38,8 @@ var app = new Framework7({
 
     {
       path: "/booking_source/",
-      url: "./pages/booking_source.html"
+      url: "./pages/booking_source.html",
+      name: "booking_source"
     },
 
     {
@@ -52,6 +58,7 @@ var app = new Framework7({
     }
   ]
 });
+
 
 // var $$ = Dom7;
 

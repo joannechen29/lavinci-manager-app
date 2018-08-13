@@ -1,0 +1,146 @@
+<div class="page" data-name="top_nationalities">
+    <div class="panel panel-left panel-cover">
+        <p>Hello User!</p>
+        <div class="list links-list no-hairlines">
+            <ul>
+                <li>
+                    <a href="/daily_summary/">Daily Summary</a>
+                </li>
+                <li>
+                    <a href="/booking_source/">Booking Source</a>
+                </li>
+                <li>
+                    <a href="/current_operations/">Current Operations</a>
+                </li>
+                <li>
+                    <a href="/available_tables/">Available Tables</a>
+                </li>
+                <li>
+                    <a href="/top_nationalities/">Top Nationalities</a>
+                </li>
+                <li>
+                    <a href="/messages/">Messages</a>
+                </li>
+                <li>
+                    <a href="/logout/">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="statusbar"></div>
+    <!-- Top Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link icon-only panel-open">
+                    <i class="f7-icons">bars</i>
+                </a>
+            </div>
+
+            <div class="title">Top Nationalities</div>
+
+            <div class="right">
+
+                    <a href="" onclick="jQuery('.filter-area').toggle();">
+                        <!-- Filter -->
+                        <i class="f7-icons">filter_full</i>
+                    </a>
+    
+    
+                </div>
+            
+
+        </div>
+    </div>
+
+    <div class="page-content">
+            <div class="filter-area" style="display:none;">
+            <table>
+                <!-- Restaurant options -->
+                <tr>
+                    <th class="table-head-label text-align-left ">
+                        Restaurant
+                    </th>
+
+                    <th class=" ">
+                        <div class="input input-dropdown  ">
+
+                            <select id="filterRestaurant">
+                                <option id="all" value="All">All</option>
+                                <option id="restA" value="Restaurant A">Restaurant A</option>
+                                <option id="restB" value="Restaurant B">Restaurant B</option>
+                                <option id="restC" value="Restaurant C">Restaurant C</option>
+
+                            </select>
+
+                        </div>
+                    </th>
+
+                </tr>
+                <!-- calender date -->
+                <tr>
+                    <th class="text-align-left"> Date</th>
+
+                    <th class="">
+
+                        <div class="list no-hairlines-md">
+                            <ul>
+                                <li>
+                                    <div class="item-content item-input">
+                                        <div class="item-inner">
+                                            <div class="item-input-wrap">
+                                                    <input type="text" placeholder="Select date range" readonly="readonly" id="demo-calendar-range" />
+                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <a href="">
+
+                            <div class="f7-icons" id="demo-calendar-modal">calendar </div>
+
+
+                        </a> -->
+                    </th>
+                </tr>
+
+
+
+                <tr>
+                    <th>
+                        <button type="button" class="col button button-big button-fill" onclick="getDailySummary()">Apply</button>
+                    </th>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="block">
+            <div class="row no-gap">
+                <div class="col" id="country1">Portugal</div>
+                <div class="col" id="country2">France</div>
+            </div>
+            <div class="row no-gap">
+                <div class="col" id="country3">Spain</div>
+                <div class="col" id="country4">Germany</div>
+            </div>
+            <div class="row no-gap">
+                <div class="col" id="country5">Brasil</div>
+                <div class="col" id="country6">UK</div>
+            </div>
+            <div class="row no-gap">
+                <div class="col" id="country7">U.S</div>
+                <div class="col" id="country8">Italy</div>
+            </div>
+            <div class="row no-gap">
+                <div class="col" id="country9">Netherlands</div>
+                <div class="col" id="country10">China</div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

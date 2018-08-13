@@ -1,71 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#2196f3">
-    <title>My App</title>
-    <link rel="stylesheet" href="framework7/css/framework7.min.css">
-    <link rel="stylesheet" href="framework7/css/framework7.md.min.css">
-    <link rel="stylesheet" href="css/framework7-icons.css">
-  </head>
-  <body>
-    <!-- App root element -->
-    <div id="app">
-      <div class="panel panel-left panel-reveal">
-        <p>lorem ipsum...</p>
-        <div class="list links-list no-hairlines">
-          <ul>
-            <li>
-              <a href="/about/">About</a>
-            </li>
-            <li>
-              <a href="#">Link Item 2</a>
-            </li>
-            <li>
-              <a href="#">Link Item 3</a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- Statusbar overlay -->
-      <div class="statusbar"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#9CBB7B">
+  <title>My App</title>
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="framework7/css/framework7.md.min.css">
+  <link rel="stylesheet" href="css/framework7-icons.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
+</head>
 
-          <!-- Top Navbar -->
-          <div class="navbar">
-              <div class="navbar-inner">
-                  <div class="left">
-                      <a href="#" class="link icon-only panel-open"><i class="f7-icons">more_vertical</i></a>
+<body>
+  <!-- App root element - side menu -->
+  <div id="app">
+
+    <!-- Statusbar overlay -->
+    <div class="statusbar"></div>
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+      <!-- Initial Page, "data-name" contains page name -->
+      <div data-name="home" class="page">
+
+
+
+        <!-- Scrollable page content ON THE MAIN PAGE - this is where the daily summary stuff would go -->
+        <div class="page-content">
+          <div class="page no-navbar no-toolbar no-swipeback">
+            <div class="page-content login-screen-content">
+              <div class="login">My App</div>
+              <form>
+                <div class="login__row1">
+                  <input type="text" id="login__input__email" placeholder="Username" />
+                </div>
+                <div class="login__row2">
+                  <input type="password" id="login__input__pass" placeholder="Password" />
+                  <div class="">
+                    <button type="button" class="col button button-fill button-round" onclick="login_success()">Sign in </button>
                   </div>
-                  <div class="title">Page Title</div>
-              </div>
-          </div>
+                </div>
+                <p class="login__signup">Forgot your password? &nbsp;
+                  <a>Retrieve it here</a>
+                </p>
+              </form>
 
-          <!-- Toolbar -->
-          <div class="toolbar toolbar-bottom-md">
-            <div class="toolbar-inner">
-              <a href="#" class="link">Link 1</a>
-              <a href="#" class="link">Link 2</a>
+              <div class="block-title">Preloader Modals</div>
+              <div class="block block-strong">
+                <a class="button button-raised open-preloader-indicator">Open Small Indicator</a>
+              </div>
             </div>
           </div>
 
-          <!-- Scrollable page content -->
-          <div class="page-content">
-            <p>Page content goes here</p>
-            <a href="/about/">About app</a>
-          </div>
+
         </div>
       </div>
     </div>
-    
-    <script type="text/javascript" src="framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/test.js"></script>
-  </body>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="framework7/js/framework7.min.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+  <!-- jQuery Modal -->
+
+  <script type="text/javascript" src="js/test.js"></script>
+  <script type="text/javascript" src="js/daily_summary.js"></script>
+  <script type="text/javascript" src="js/available_tables.js"></script>
+  <script type="text/javascript" src="js/booking_source.js"></script>
+  <script type="text/javascript" src="js/current_operations.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/messages.js"></script>
+  <script type="text/javascript" src="js/top_nationalities.js"></script>
+
+</body>
+
 </html>

@@ -1,0 +1,104 @@
+<div class="page" data-name="messages">
+    <!-- Top Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link icon-only panel-open">
+                    <i class="f7-icons">bars</i>
+                </a>
+                <!-- <a href="#" onclick="app.router.back();" class="link icon-only">
+                    <i class="icon icon-back"></i>
+                </a> -->
+            </div>
+            <div class="title">Messages</div>
+            <div class="right">
+                <a href="#" data-popup=".messages-popup" class="link icon-only popup-open">
+                    <i class="f7-icons">add_round_fill</i>
+                    <!-- <button class="col button button-small button-outline">Show</button> -->
+                </a>
+                <!-- <a href="#" class="link icon-only">
+                    <i class="f7-icons">add_round_fill</i>
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!--and somewhere in DOM-->
+    <div class="popup messages-popup">
+        <div class="page-messages">
+            <div class="navbar">
+                <div class=navbar-inner>
+                    <div class="title">Add New Message</div>
+                    <div class="right">
+                        <a href="#" class="link icon-only popup-close">
+                            <i class="f7-icons">close_round_fill</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="block-title">
+                    <p id="datepairExample">
+                        <input type="text" class="date start" />
+                        <input type="text" class="time start" /> to
+                        <input type="text" class="time end" />
+                        <input type="text" class="date end" />
+                    </p>
+                </div>
+                <div class="list inset">
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input type="text" placeholder="Your name">
+                                    <span class="input-clear-button"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input type="text" placeholder="Your message">
+                                    <textarea class="resizable"></textarea>
+                                    <span class="input-clear-button"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="page-content">
+
+        <div class="card">
+            <div class="card-header">Person1</div>
+            <div class="card-content card-content-padding">Person 1 message.</div>
+            <div class="card-footer">People who like this</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Person2</div>
+            <div class="card-content card-content-padding">Person 2 message.</div>
+            <div class="card-footer">People who like this</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Person3</div>
+            <div class="card-content card-content-padding">Person 3 message.</div>
+            <div class="card-footer">People who like this</div>
+        </div>
+        <div class="card">
+            <div class="card-header">Person4</div>
+            <div class="card-content card-content-padding">Person 4 messages.</div>
+            <div class="card-footer">People who like this: </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Person5</div>
+            <div class="card-content card-content-padding">Person 5 message.</div>
+            <div class="card-footer">People who like this</div>
+        </div>
+    </div>
+</div>
