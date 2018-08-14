@@ -1,29 +1,4 @@
-// var $$ = Dom7;
 
-  // //  doughnut Chart
-  // $$(document).on("page:init", '.page[data-name="booking_source"]', function(e) {
-  //   var ctx = document.getElementById("myDoughnutChart");
-  //   // var Chart = require('chart.js');
-  //   var myDoughnutChart = new Chart(ctx, {
-  //     type: "doughnut",
-  //     data: {
-  //       datasets: [
-  //         {
-  //           data: [10, 15, 25],
-  //           backgroundColor: [
-  //             "rgba(160, 106, 235, 1)",
-  //             "rgba(255, 196, 51, 1)",
-  //             "rgba(255, 133, 133, 1)"
-  //           ]
-  //         }
-  //       ],
-  
-  //       // These labels appear in the legend and in the tooltips when hovering different arcs
-  //       labels: ["Internal", "Online", "Operation"]
-  //     }
-  //     // options: options
-  //   });
-  // });
 // calendarpick for booking_source
 $$(document).on("page:init", function(e) {
   // calendarpick for booking_source
@@ -53,7 +28,7 @@ $$(document).on("page:init", function(e) {
       ],
 
       // These labels appear in the legend and in the tooltips when hovering different arcs
-      labels: ["Internal", "Online", "Operation"]
+      labels: ["Online", "Operation", "Internal"]
     }
     // options: options
   });
@@ -78,7 +53,7 @@ $$(document).on("page:init", function(e) {
           var sourceOperation = data.sources[1].value;
           var sourceInternal = data.sources[2].value;
 
-          var total = sourceInternal + sourceOnline + sourceInternal;
+          var total = sourceInternal + sourceOnline + sourceOperation;
 
           var dataSet = data.sources.map(function(item) {
             return item.value;
@@ -96,7 +71,7 @@ $$(document).on("page:init", function(e) {
           // app.myDoughnutChart.set("canvas.myDoughnutChart", data.myDoughnutChart);
         } // end of if statement
       } // end of success
-    });
+    });// end of ajax
   };
 
   getBookingSource();

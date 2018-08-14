@@ -3,6 +3,38 @@
   height: 6vh;
 }
 
+
+/* 
+.page{
+  background-image: url(table3.jpeg);
+  
+backgounnd-image-opacity: 0.33;
+
+background-size: cover;
+
+  
+} */
+
+/* .backgroundimg {
+  height: 100%; /* To fill everything */
+  width: 100%; /* To fill everything */
+  background: url("table3.jpeg"); /* Your Image */
+  background-size: cover; /* To cover everything */
+  position: absolute; /* this is most important! */
+  -webkit-filter: blur(2px); /* To blur the image */
+} */
+
+ .loginForm {
+  background-color: white;
+  
+}
+
+
+
+
+
+
+
 div[data-name="booking_source"] .page-content{
 
   overflow: auto;
@@ -10,6 +42,9 @@ div[data-name="booking_source"] .page-content{
 div[data-name="daily_summary"] .page-content {
   background-color: white;
 }
+
+
+
 
 div[data-name="daily_summary"] .occupancy_percentage {
   font-family: Arial, Helvetica, sans-serif;

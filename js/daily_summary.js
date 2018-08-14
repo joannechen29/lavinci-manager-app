@@ -41,10 +41,8 @@ getDailySummary = function() {
     },
 
     success: function(data, status) {
+      console.log(data);
       if (data.status == true) {
-     
-
-
         jQuery(".occupancy_percentage").html(data.occupancy_rate + "%");
         app.progressbar.set("span.progressbar", data.occupancy_rate);
         // jQuery(".bookings-value").html(data.bookings);
